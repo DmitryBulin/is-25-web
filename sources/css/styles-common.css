@@ -1,3 +1,173 @@
-li {
-    list-style-type: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, img, kbd, q, samp,
+small, strike, strong, tt, var,
+center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+:root {
+    --backrgound-default: #222;
+    --background-important: #171717;
+    --color-default: #ccc;
+    --color-brand: #ffcf01;
+    --color-side:  #999;
+}
+
+html {
+    font-family: 'Roboto-local',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: var(--color-default);
+    scroll-behavior: smooth;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--color-brand);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top:-100px;
+    visibility: hidden;
+}
+
+.canvas-content {
+    background: var(--backrgound-default);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.content-section {
+    width: auto;
+    padding: 25px 0 10px;
+}
+
+.content-container {
+    max-width: 1600px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.background-important {
+    background: var(--background-important);
+}
+
+.text-highlight {
+    color: var(--color-default);
+    font-size: 1.2rem;
+}
+
+.text-muted {
+    color: var(--color-side);
+    font-size: 0.85rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 25px;
+}
+
+.margin-bottom {
+    margin-bottom: 25px;
+}
+
+/* <editor-fold desc="Header"> */
+
+.navbar-container, .navbar-container-placeholder {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 50px;
+}
+
+.navbar-container {
+    position: fixed;
+    background: #222;
+    border-bottom: 1px solid #2f2f2f;
+    box-shadow: 0 0 30px 0 #171717;
+}
+
+.navbar-left {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav>li>a, .navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.25em;
+    box-sizing: border-box;
+    min-height: 50px;
+    font-size: .875rem;
+    text-decoration: none;
+}
+
+.navbar-nav>li>a {
+    padding: 0 20px;
+    color: #999;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* </editor-fold> */
+
+.section-header {
+    font-size: 1.6rem;
+}
+
+main>.content-section {
+    padding: 45px 0;
+}
+
+main>.content-section:nth-child(even) {
+    background: var(--background-important);
+}
+/* <editor-fold desc="Footer"> */
+
+
+/* </editor-fold> */
