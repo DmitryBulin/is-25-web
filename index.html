@@ -8,16 +8,23 @@
     <meta name="author" content="Дмитрий Бульин">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sources/css/styles-common.css">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="sources/icon/logo-small.svg">
 </head>
 <body>
-<script src="sources/js/outline-prototype.js"></script>
 <div class="canvas-content">
 <header>
     <div class="navbar-container">
         <div class="content-container">
-        <nav>
+        <nav style="display: flex">
             <div class="navbar-left">
-                <a href="/is-25-web/" class="navbar-item">HoneyPC</a>
+                <a href="/is-25-web/" class="navbar-item logo logo-large">
+                    <img src="sources/icon/logo-large.svg" alt="HoneyPC logo">
+                </a>
+                <a href="/is-25-web/" class="navbar-item logo logo-small">
+                    <img src="sources/icon/logo-small.svg" alt="HoneyPC logo">
+                </a>
+            </div>
+            <div class="navbar-right">
                 <ul class="navbar-nav">
                     <li>
                         <a href="/is-25-web/#preset-configurations" role="button">
@@ -41,8 +48,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="navbar-right">
-            </div>
         </nav>
         </div>
     </div>
@@ -51,7 +56,11 @@
 <main>
     <div class="content-section">
         <div class="content-container">
-        <img src="sources/img/promo/placeholder.png" alt="Купи 1 заплати за 2">
+        <div class="promotion-cover">
+            <a role="button" href="">
+            <img src="sources/img/promo/placeholder.png" alt="Купи 1 заплати за 2">
+            </a>
+        </div>
         <p class="section-header text-center margin-top">&lt;- Промо-акции -&gt;</p>
         </div>
     </div>
@@ -59,30 +68,54 @@
         <a id="preset-configurations" class="anchor"></a>
         <div class="content-container">
         <p class="section-header text-center margin-bottom">Готовые модели</p>
-        <div style="display: flex">
-            <div>
-                <p class="text-highlight text-center">Модель</p>
-                <img height="128" src="sources/img/models/placeholder1.png" alt="Модель">
-                <a>Настроить</a>
-                <a>Подробнее</a>
+        <div class="item-grid">
+            <div class="model-card card">
+                <img src="sources/img/models/placeholder1.png" alt="Модель">
+                <p class="text-highlight">Модель</p>
+                <p class="text-muted">Главная информация о модели</p>
+                <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
+                <a class="button-secondary text-highlight" role="button" href="">Подробнее</a>
             </div>
-            <div>
-                <p class="text-highlight text-center">Модель</p>
-                <img height="128" src="sources/img/models/placeholder2.png" alt="Модель">
-                <a>Настроить</a>
-                <a>Подробнее</a>
+            <div class="model-card card">
+                <img src="sources/img/models/placeholder2.png" alt="Модель">
+                <p class="text-highlight">Модель</p>
+                <p class="text-muted">Главная информация о модели</p>
+                <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
+                <a class="button-secondary text-highlight" role="button" href="">Подробнее</a>
             </div>
-            <div>
-                <p class="text-highlight text-center">Модель</p>
-                <img height="128" src="sources/img/models/placeholder1.png" alt="Модель">
-                <a>Настроить</a>
-                <a>Подробнее</a>
+            <div class="model-card card">
+                <img src="sources/img/models/placeholder1.png" alt="Модель">
+                <p class="text-highlight">Модель</p>
+                <p class="text-muted">Главная информация о модели</p>
+                <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
+                <a class="button-secondary text-highlight" role="button" href="">Подробнее</a>
             </div>
-            <div>
-                <p class="text-highlight text-center">Модель</p>
-                <img height="128" src="sources/img/models/placeholder2.png" alt="Модель">
-                <a>Настроить</a>
-                <a>Подробнее</a>
+            <div class="model-card card">
+                <img src="sources/img/models/placeholder2.png" alt="Модель">
+                <p class="text-highlight">Модель</p>
+                <p class="text-muted">Главная информация о модели</p>
+                <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
+                <a class="button-secondary text-highlight" role="button" href="">Подробнее</a>
+            </div>
+            <div class="model-card card">
+                <img src="sources/img/models/placeholder1.png" alt="Модель">
+                <p class="text-highlight">Модель</p>
+                <p class="text-muted">Главная информация о модели</p>
+                <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
+                <a class="button-secondary text-highlight" role="button" href="">Подробнее</a>
+            </div>
+            <div class="model-card card">
+                <img src="sources/img/models/placeholder2.png" alt="Модель">
+                <p class="text-highlight">Модель</p>
+                <p class="text-muted">Главная информация о модели</p>
+                <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
+                <a class="button-secondary text-highlight" role="button" href="">Подробнее</a>
             </div>
         </div>
         </div>
@@ -91,19 +124,27 @@
         <a id="configurator" class="anchor"></a>
         <div class="content-container">
         <p class="section-header text-center margin-bottom">Конфигуратор</p>
-        <div style="display: flex">
-            <div>
-                <h4>Соберите компьютер под свои цели</h4>
-                <p>Мощно умно современно</p>
-                <h4>Причины собрать свою конфигурацию</h4>
+        <div class="configurator-container item-grid column-flow">
+            <div class="text-promo">
+                <p class="text-highlight">Соберите компьютер под свои цели</p>
+                <p>Мощно умно современноМощно умно современноМощно умно современноМощно умно современно</p>
+                <p class="text-highlight">Причины собрать свою конфигурацию</p>
                 <ul>
                     <li>Настроить под свои цели</li>
                     <li>Избежать проблем со сборкой</li>
                     <li>Получить гарантию и поддержку от наших специалистов</li>
                 </ul>
+                <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
+                <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
+                <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
+                <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
+                <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
             </div>
-            <div>
-                <img height="384" src="sources/img/configurator/placeholder.png">
+            <div class="column-flow">
+                <div class="image-promo">
+                    <img height="384" src="sources/img/configurator/placeholder.png">
+                </div>
+                <a class="button-primary text-highlight" role="button" href="">Настроить</a>
             </div>
         </div>
         </div>
@@ -112,18 +153,33 @@
         <a id="partners" class="anchor"></a>
         <div class="content-container">
         <p class="section-header text-center text-center margin-bottom">Наши партнёры</p>
-        <div style="display: flex">
-            <div>
+        <div class="item-grid">
+            <div class="partner-card card">
                 <a href=https://www.dns-shop.ru/  target=”_blank”>
                     <img height="256" src="sources/img/partners/placeholder.png" alt="DNS">
                 </a>
             </div>
-            <div>
+            <div class="partner-card card">
                 <a href=https://www.computeruniverse.net/ru  target=”_blank”>
                     <img height="256" src="sources/img/partners/placeholder.png" alt="ComputerUniverse">
                 </a>
             </div>
-            <div>
+            <div class="partner-card card">
+                <a href=https://www.ozon.ru/  target=”_blank”>
+                    <img height="256" src="sources/img/partners/placeholder.png" alt="Ozon">
+                </a>
+            </div>
+            <div class="partner-card card">
+                <a href=https://www.dns-shop.ru/  target=”_blank”>
+                    <img height="256" src="sources/img/partners/placeholder.png" alt="DNS">
+                </a>
+            </div>
+            <div class="partner-card card">
+                <a href=https://www.computeruniverse.net/ru  target=”_blank”>
+                    <img height="256" src="sources/img/partners/placeholder.png" alt="ComputerUniverse">
+                </a>
+            </div>
+            <div class="partner-card card">
                 <a href=https://www.ozon.ru/  target=”_blank”>
                     <img height="256" src="sources/img/partners/placeholder.png" alt="Ozon">
                 </a>
@@ -133,7 +189,7 @@
     </div>
 </main>
 <footer>
-    <div class="footer-sitemap content-section text-muted">
+    <div class="footer-sitemap content-section text-muted background-important">
         <div class="content-container">
             <p class="text-highlight">Карта сайта</p>
             <pre>
@@ -153,7 +209,7 @@ Console.WriteLine(sum);
             </pre>
         </div>
     </div>
-    <div id="contacts" class="footer-contacts content-section background-important">
+    <div id="contacts" class="footer-contacts content-section">
         <div class="content-container">
             <p class="text-highlight">Контакты</p>
             <div>
