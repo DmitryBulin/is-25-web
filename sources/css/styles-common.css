@@ -66,6 +66,7 @@ a:hover {
 .canvas-content {
     background: var(--backrgound-default);
     width: 100%;
+/*    min-height: 1020px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,6 +203,14 @@ a:hover {
     min-height: 50px;
     font-size: .875rem;
     text-decoration: none;
+}
+
+.navbar-nav>li:hover {
+    background: var(--background-highlight);
+}
+
+.navbar-nav>li.current-active {
+    background: var(--background-important);
 }
 
 .navbar-nav>li>a {
