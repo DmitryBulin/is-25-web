@@ -110,6 +110,10 @@ a:hover {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .margin-top {
     margin-top: 25px;
 }

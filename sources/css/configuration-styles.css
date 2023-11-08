@@ -1,0 +1,62 @@
+.configurator-container {
+    align-items: baseline;
+}
+
+.configurator-parts {
+    min-height: 250px;
+    width: 40%;
+    background: var(--background-highlight);
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.configurator-part-section {
+    width: 95%;
+    background: var(--background-important);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.configurator-part-section>p {
+    display: inline-block;
+}
+
+.configurator-part {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.configurator-part>p, .part-right>p {
+    display: inline-block;
+    margin: 5px 12px;
+}
+
+.part-right {
+    display: inline-flex;
+    align-items: center;
+}
+
+.part-right>a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.part-right>a>img {
+    width: 100%;
+    height: auto;
+}
+
+.configurator-total {
+    padding: 12px 10px;
+}
+
+input.button-primary {
+    border: none;
+}

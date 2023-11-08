@@ -8,7 +8,9 @@
     <meta name="author" content="Дмитрий Бульин">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/is-25-web/sources/css/styles-common.css">
+    <link rel="stylesheet" href="/is-25-web/sources/css/configuration-styles.css">
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/is-25-web/sources/icon/logo-small.svg">
+    <script src="/is-25-web/sources/js/configuration-list.js"></script>
     <script src="/is-25-web/sources/js/statistics.js"></script>
     <script src="/is-25-web/sources/js/current-page.js"></script>
 </head>
@@ -66,26 +68,19 @@
             <div class="content-container">
                 <p class="section-header text-center margin-bottom">Конфигуратор</p>
                 <div class="configurator-container item-grid column-flow">
-                    <div class="text-promo">
-                        <p class="text-highlight">Соберите компьютер под свои цели</p>
-                        <p>Мощно умно современноМощно умно современноМощно умно современноМощно умно современно</p>
-                        <p class="text-highlight">Причины собрать свою конфигурацию</p>
-                        <ul>
-                            <li>Настроить под свои цели</li>
-                            <li>Избежать проблем со сборкой</li>
-                            <li>Получить гарантию и поддержку от наших специалистов</li>
-                        </ul>
-                        <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
-                        <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
-                        <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
-                        <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
-                        <p class="text-muted">Много много дополнительной и рекламной информации. Очень много. Lorem lorem ipsum</p>
+                    <div class="configurator-parts" id="available-items">
+                        <p class="text-center text-highlight margin-top margin-bottom">Доступные комплектующие</p>
                     </div>
-                    <div class="column-flow">
-                        <div class="image-promo">
-                            <img height="384" src="/is-25-web/sources/img/configurator/placeholder.png">
+                    <div class="configurator-parts">
+                        <div class="configurator-parts" style="width: 100%" id="user-items">
+                            <p class="text-center text-highlight margin-top margin-bottom">Выбранные комплектующие</p>
                         </div>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
+                        <div class="configurator-total">
+                            <p id="total-price" class="text-highlight text-center">0 р.</p>
+                            <form id="configurator-form">
+                                <input class="button-primary text-highlight" type="submit" value="Отправить">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
