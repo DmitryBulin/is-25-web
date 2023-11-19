@@ -8,9 +8,11 @@
     <meta name="author" content="Дмитрий Бульин">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/is-25-web/sources/css/styles-common.css">
+    <link rel="stylesheet" href="/is-25-web/sources/css/models-styles.css">
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/is-25-web/sources/icon/logo-small.svg">
     <script src="/is-25-web/sources/js/statistics.js"></script>
     <script src="/is-25-web/sources/js/current-page.js"></script>
+    <script src="/is-25-web/sources/js/models-fetch.js"></script>
 </head>
 <body>
 <div class="canvas-content">
@@ -61,59 +63,12 @@
         <div class="navbar-container-placeholder"></div>
     </header>
     <main>
-        <div class="content-section">
+        <div class="content-section" style="background:var(--background-default)">
             <a id="preset-configurations" class="anchor"></a>
             <div class="content-container">
                 <p class="section-header text-center margin-bottom">Готовые модели</p>
-                <div class="item-grid">
-                    <div class="model-card card">
-                        <img src="/is-25-web/sources/img/models/placeholder1.png" alt="Модель">
-                        <p class="text-highlight">Модель</p>
-                        <p class="text-muted">Главная информация о модели</p>
-                        <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
-                        <a class="button-secondary text-highlight" role="button" href="/is-25-web/pages/models.html">Подробнее</a>
-                    </div>
-                    <div class="model-card card">
-                        <img src="/is-25-web/sources/img/models/placeholder2.png" alt="Модель">
-                        <p class="text-highlight">Модель</p>
-                        <p class="text-muted">Главная информация о модели</p>
-                        <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
-                        <a class="button-secondary text-highlight" role="button" href="/is-25-web/pages/models.html">Подробнее</a>
-                    </div>
-                    <div class="model-card card">
-                        <img src="/is-25-web/sources/img/models/placeholder1.png" alt="Модель">
-                        <p class="text-highlight">Модель</p>
-                        <p class="text-muted">Главная информация о модели</p>
-                        <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
-                        <a class="button-secondary text-highlight" role="button" href="/is-25-web/pages/models.html">Подробнее</a>
-                    </div>
-                    <div class="model-card card">
-                        <img src="/is-25-web/sources/img/models/placeholder2.png" alt="Модель">
-                        <p class="text-highlight">Модель</p>
-                        <p class="text-muted">Главная информация о модели</p>
-                        <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
-                        <a class="button-secondary text-highlight" role="button" href="/is-25-web/pages/models.html">Подробнее</a>
-                    </div>
-                    <div class="model-card card">
-                        <img src="/is-25-web/sources/img/models/placeholder1.png" alt="Модель">
-                        <p class="text-highlight">Модель</p>
-                        <p class="text-muted">Главная информация о модели</p>
-                        <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
-                        <a class="button-secondary text-highlight" role="button" href="/is-25-web/pages/models.html">Подробнее</a>
-                    </div>
-                    <div class="model-card card">
-                        <img src="/is-25-web/sources/img/models/placeholder2.png" alt="Модель">
-                        <p class="text-highlight">Модель</p>
-                        <p class="text-muted">Главная информация о модели</p>
-                        <p class="text-muted">Много дополнительной и неважной информации о модели.</p>
-                        <a class="button-primary text-highlight" role="button" href="/is-25-web/pages/configurator.html">Настроить</a>
-                        <a class="button-secondary text-highlight" role="button" href="/is-25-web/pages/models.html">Подробнее</a>
-                    </div>
+                <div class="item-grid" id="model-frame">
+                    <div id="models-preloader"></div>
                 </div>
             </div>
         </div>
